@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // mnogo mernyye massivy
+
+        let matrix = []; // odnomernyy massiv
+        // mnogomerny massiv
+        let matrix1 = [
+            [1,2,3], //0
+            [2,2,2,], //1
+            [3,2,1], //2
+            
+        ]
+console.log(matrix1[1][1]); // 5
+
+//object iz massivov
+let people = {
+    names1:[["ivan,petya"],"kolya,irina"],
+    names2:[["anya,andrey"],"tamara,anton"]
+
+}
+console.log(people.names1[1]);//kolya
+console.log(people.names1[0][1]);//petya
+
+//massiv iz objectov s odinakovymi imenami
+
+let arrImg = [
+    {name:"vasya",surname:"ivanov",age:25}, //0
+    {name:"sasha",surname:"petrov",age:30}, //1
+    {name:"anyz",surname:"mihaylova",age:27} //2
+]
+// console.log(arrImg[0].name); // vasya
+ for (i=0;i<arrImg.length;i++){
+    console.log(`Imya:${arrImg[i].name}`);
+ }
+
+//massiv iz object s odinakowym nazwaniyem
+ let arrPeople = [
+    {user: {name:"Sulik",surname:"ivanov",age:25}}, //0
+    {user: {name:"sasha",surname:"petrov",age:30}}, //1
+    {user: {name: "anya",surname:"mihaylova",age:27}} //2
+
+]
+for(i=0;i<arrPeople.length;i++){
+console.log(`Имя: ${arrPeople[i].user.name}`);
+}
+let arrPeople1 = [
+    {user1: {name:"Sulik",surname:"ivanov",age:25}}, //0
+    {user2: {name:"sasha",surname:"petrov",age:30}}, //1
+    {user3: {name: "anya",surname:"mihaylova",age:27}} //2
+]
+for(i=0;i<arrPeople1.length;i++){
+for( key in arrPeople1[i]){
+    arrPeopleCopy[key]=arrPeople1[key];
+    console.log(`Имя: ${arrPeople[i][key].name}`);
+   
+}
+
+}
+    </script>
+</body>
+</html>

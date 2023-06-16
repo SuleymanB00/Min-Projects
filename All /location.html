@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="box"></div>
+
+
+    <a href="#title1">Ссылка на зоголовок</a>
+
+    <h2 id="title1">Заголовок</h2>
+
+    <script>
+
+        box.innerHTML = `
+   <p>href: ${location.href}</p>
+   <p>protocol: ${location.protocol}</p>
+   <p>host: ${location.host}</p>
+   <p>pathname: ${location.pathname}</p>
+   <p>hash: ${location.hash}</p>
+   <p>search: ${location.search}</p>     
+        `;
+
+    </script>
+
+</body>
+</html>

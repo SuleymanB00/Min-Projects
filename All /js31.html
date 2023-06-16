@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <!-- onclick="func1();func2()" -->
+        <input type="button" id="b1" 
+        value="Najmite">
+    </p>
+    <p id="b2">Nawedite</p>
+
+
+
+
+    <script>
+
+    function func1(){
+        alert("Hello!");
+    }
+    function func2(){
+        alert("Hello again!");
+    }
+    function func3(){
+        b2.innerHTML=("Goodbye");
+    }
+
+      b1.addEventListener("click",func1);
+      b1.addEventListener("click",func2);
+      b2.addEventListener("mouseover",func3);
+    </script>
+</body>
+</html>

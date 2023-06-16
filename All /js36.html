@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        color: red;
+        margin:10px 20px 15px 00px;
+    }
+</style>
+
+<body>
+    <div id="box"></div>
+    <script>
+
+let styleM = getComputedStyle(document.body);
+box.innerHTML = `
+margin:${styleM.margin}<br>
+margin-top:${styleM.marginTop}<br>
+margin-right:${styleM.marginRight}<br>
+margin-bottom :${styleM.marginBottom}<br>
+margin-left :${styleM.marginLeft}<br>
+`;
+
+    </script>
+</body>
+</html>

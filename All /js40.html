@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="change()">
+    <a id="link1" href="https://www.google.ru/"><img id="img1" src="images/minsk1.jpg" alt=""></a>
+    <script>
+        
+       
+        let num=1, max=2;
+        let to = [
+            " https://www.google.ru/",
+            "https://yandex.by/"
+     
+        ]
+function change (){
+    if(num>max)num=1;
+    link1.href= to [num-1];
+img1.src = `images/minsk${num++}.jpg`;
+
+setTimeout(change,2000);
+}
+
+
+
+    </script>
+</body>
+</html>

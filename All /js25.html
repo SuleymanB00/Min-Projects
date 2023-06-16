@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let person = {};
+person.name = "Petya";
+person.age = 30;
+console.log(person.name,person.age);
+
+
+//operator for in
+delete person.name;
+if("name"in person){
+console.log("yes");
+}else{
+    console.log("no");
+}
+
+//dostup cerez kwadratnye skobki []
+person.name = "Vasya";
+console.log(person.name);
+console.log(person["name"]);//2 oy sposob
+
+//dostup cerez peremennuyu
+
+let key = "age";
+console.log(person[key]);
+
+let img = {
+    file:"file.jpg",
+    width:"300px",
+    height:"250px"
+}
+for(let key in img){
+    console.log(`Swoystwa:${key};
+    znaceniye:${img[key]}`);
+}
+
+    </script>
+</body>
+</html>

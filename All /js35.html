@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        p:nth-child(even){
+            color: red;
+        }
+    </style> -->
+</head>
+<body>
+    
+    <p>Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <p>Paragraf 3</p>
+    <p>Paragraf 4</p>
+    <p>Paragraf 5</p>
+    <p>Paragraf 6</p>
+    <p>Paragraf 7</p>
+    <p>Paragraf 8</p>
+    <p>Paragraf 9</p>
+    <p>Paragraf 1o</p>
+
+    <button onclick="change()">Izmenit</button>
+    <script>
+//poisk po selectoram css
+// document.querySelectorAll()
+function change(){
+    let sel1=document.querySelectorAll("p:nth-child(odd)");
+//     let p1 = document.getElementsByTagName("p")
+// for(index of p1){
+//     index.style=`
+// color:red;
+// font-size1.3em
+// `;
+// }
+for(index of sel1)
+index.style=`         
+color:magenta;
+font-size:1.3em;
+`;               //// index.style.color = "magenta";
+                 // index.style.fontSize = "1.3em";
+}
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

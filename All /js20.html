@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //slucaynoy veliciny
+        const Max=5;
+// sluvaynoe cislo ot 0 do 1
+        let random1 = Math.random();
+        console.log(random1);
+
+ // umnojit na Max
+ let random2 = random1* Max;
+ console.log(random2);       
+
+ //oklugleniye slucaynogo cisla do celogo
+ let random3 = Math.round(random2);
+ console.log("round:"+random3);
+
+ let random4 = Math.floor(random2);
+ console.log("floor:"+random4);
+
+ let random5 = Math.ceil(random2);
+ console.log("ceil:"+random5);
+
+
+ let cities = ["Minsk", "Paris","London","Tokyo"];
+
+ console.log(cities[Math.floor(Math.random()*cities.length)]);
+ //perebor massiva
+ for(i=0;i<cities.length;i++){
+    console.log(cities[i]);
+ }
+ console.log("");
+ //   for.. of
+ for(index of cities)
+ console.log(index);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

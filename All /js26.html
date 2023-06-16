@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //zawisimaya kopiya
+        let user = {name:"VAsya"}
+        let admin = user;
+        admin.name = "petya";
+        console.log(admin.name,user.name);
+
+        //klonirowaniye objecta
+        //nezawisimaya kopiya
+
+
+        let hero = {
+            name:"Bond",
+            age:30,
+            id:"007"
+        }
+        let clone = {};
+        for(let key in hero){
+     clone[key]=hero[key];
+console.log(`hero:${key}:${hero[key]};clone:${key}:${clone[key]}`);
+}
+
+clone.name = "Batmen";
+console.log (clone.name,hero.name);
+
+    </script>
+</body>
+</html>

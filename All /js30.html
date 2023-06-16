@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <img src="images/summer.jpg" alt="" onmouseover="showText()" onmouseout = "id1.innerHTML=''">
+    <div id="id1"></div>
+    <p>
+        <input type="text"
+        placeholder="Wwedite id"
+        onchange="this.value =this.value.toUpperCase()">
+        
+    </p>
+    <script>
+function showText(){
+    id1.innerHTML = "Akwopark";
+}
+
+
+
+    </script>
+</body>
+</html>

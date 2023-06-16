@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+        color:red;
+      margin: 5px;
+    }
+    .text1 {color: olive;}
+    .text2 {color: blueviolet;}
+  </style>
+  
+  <body>
+    <div id="box"></div>
+
+    <div>
+        <p class="text1">Hello1</p>
+    </div>
+
+    <div>
+        <p class="text2">Hello2</p>
+    </div>
+    <script>
+      let allStyles = getComputedStyle(document.body);// eto gibrid massiva i objecta
+      let count = 0;
+      for(i=0;i<allStyles.length;i++){
+        let prop = allStyles[i];//swoystwa stilya
+        box.innerHTML += `
+        ${prop}:${allStyles[prop]} <br>
+        `
+        count++;
+
+      }
+      box.innerHTML+=`Wsego: ${count}`;
+
+       let param1 = document.getElementsByClassName("text1");
+       console.log(param1);
+       let color1 = getComputedStyle(param1[0]);
+       console.log(color1.color);
+       if(color1.color=== 'rgb(128,128,0)'){
+        alert("Ishodnyy cwet" + color1.color);
+        param1[0].style.color="rgb(255,0,0)";
+        alert("nowyy cwet " + "rgb(255,0,0)");
+       }
+   
+    </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body { animation: fadeIn 2s;}
+
+    @keyframes fadeIn {
+       from { opacity: 0 }
+       to { opacity: 1 } 
+
+    }
+
+        section {
+            width: 500px;
+            padding: 20px;
+            margin: auto;
+            /* border: 1px solid;  */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div {
+            width: 110px;
+            padding: 3px;
+            border: 1px solid; 
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #picture {
+            transition: .5s;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <div onmouseover="tab(this,'winter.jpg')">Зима</div>
+        <div onmouseover="tab(this,'spring.jpg')">Весна</div>
+        <div onmouseover="tab(this,'summer.jpg')">Лето</div>
+        <div onmouseover="tab(this,'autumn.jpg')">Осень</div>
+    </section>
+
+    <section><img id="picture" src="images/winter.jpg" alt=""></section>
+    
+    <script>
+
+        tab = (id, file) => {
+            // alert(file);
+
+    let menu = document.querySelectorAll("section > div");
+    menu.forEach(function(item,i,menu) {
+        item.style = `
+            background: #fff;
+            color: #000;
+        `;
+    })
+    
+    picture.style.opacity = "0";     
+    
+    tab1 = () => {
+
+     id.style = `
+            background: #00f;
+            color: #fff;
+     `;
+
+
+    picture.src=`images/${file}`;    
+    picture.style.opacity = "1"; 
+
+
+    }
+
+    setTimeout(tab1, 500);
+
+        }
+
+    </script>
+
+</body>
+</html>

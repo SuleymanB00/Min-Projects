@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="id1"></div>
+    <div id="id2"></div>
+    <div id="box">
+        <!-- <img src="images/minsk.jpg" width="50"> -->
+    </div>
+    <script>
+      //   for (i = 0; i <= 10; i++) {
+      //     id1.innerHTML += `HEllo ${i}`;
+      //     alert("jjjd");
+      //   }
+      let i = 0;
+      while (i <= 100) {
+        id1.innerHTML += `${i}`;
+        i += 5;
+      }
+       i = 100;
+      while (i >0) {
+        id2.innerHTML += `${i}`;
+        i -= 5;
+      }
+      let w=50;
+      while(w<=1000){
+        box.innerHTML+=`<img src="images/minsk.jpg" width="${w}">`;
+        w+=50;
+      }
+
+    </script>
+
+  </body>
+</html>

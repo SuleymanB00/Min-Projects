@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 onclick="this.innerHTML='Privet!'">Najmite</h2>
+    <h2 onclick="changeText(this)">Najmite2</h2>
+    <p><input id="text" placeholder="Wwedite text"></p>
+    <button onclick="">Najmite3</button>
+    <script>
+function message (){
+    alert(text.value);
+}
+
+
+function changeText(id){
+    id.innerHTML = "Privet iz funkcii";
+}
+
+text.onmousover = function(){text.value = "Vasya"};
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documents</title>
+  </head>
+  <body>
+    <img id="img1" src="images/1.jpg" alt="image" />
+
+    <script>
+      let number = +prompt("Write number image (1-10):");
+      if (number >= 1 && number <= 11) {
+        let type = prompt("Введите тип файла(jpg или):");
+        if (type == "jpg" || type == "png") {
+          img1.src = `images/${number}.jpg`;
+        } else {
+          alert("Неверный тип файла");
+        }
+      } else {
+        alert("Неверный номер");
+      }
+    </script>
+  </body>
+</html>

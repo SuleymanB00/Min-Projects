@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="findHere">
+        <a href="#">Text1</a>
+        <a href="#">Text2</a>
+        <a href="#">Text3</a>
+        <a href="#">Text4</a>
+        <a href="#">Text5</a>
+    </section>
+
+
+    <section>
+        <a href="#">Text6</a>
+        <a href="#">Text7</a>
+    </section>
+     <button onclick="change()">Izmenit</button>
+
+    <script>
+//poisk po imeni Tega
+//document.getElementByTagName
+function change(){
+    let find = document.getElementById("findHere");
+    let arrA = find.getElementsByTagName("a");  // let arrA = document.getElementsByTagName("a");
+        // arrA - это массив
+        
+    console.log(arrA);
+
+    for(index=0;index<arrA.length; index++){
+         // link1.html ... linkn.html
+    arrA[index].href=`link${index}.html`;
+    arrA[index].innerHtml = `Novaya ssylka${index}`;
+    }
+
+}
+
+
+
+    </script>
+</body>
+</html>

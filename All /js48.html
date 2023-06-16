@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let slide = document.createElement("section");
+
+       slide.setAttribute("id","container");
+        
+        // slide.id = "cont";
+
+    slide.style = `
+        width: 550px;
+        height: 400px;
+        border: 1px solid orange;
+        margin: 50px auto;
+    `; 
+       
+       document.body.append(slide);
+
+       let slide1 = document.createElement("img"); 
+
+       slide1.setAttribute("id","sl1"); 
+
+       slide1.setAttribute("src","images/img2b.jpg");
+
+       slide.append(slide1);
+
+
+    //  setTimeout(function() {slide.removeChild(slide1);}, 4000);  
+     setTimeout(function() {slide1.remove();}, 4000);
+     setTimeout(function() {slide.remove();}, 8000);  
+
+     
+
+    </script>
+
+
+</body>
+</html>

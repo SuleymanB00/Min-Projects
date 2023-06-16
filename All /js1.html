@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p,
+      div {
+        color: red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="id1"></p>
+    <div id="box">Example text in blok</div>
+
+    <script>
+      let message = "Java Script";
+      alert(message);
+      console.log(message);
+      id1.innerHTML = message;
+      let myBox = box.innerHTML;
+      alert(myBox);
+      box.innerHTML = "My text";
+      box.style.color = "black";
+      box.style.fontSize = "1.2em";
+      box.style = `
+      background:green;
+      width:200px;
+      border:3px dashed magenta;
+      text- align:center;
+      color:white;
+       `;
+    </script>
+
+    <script src="js/myjs.js"></script>
+  </body>
+</html>
